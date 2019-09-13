@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/CsvTest.gd" type="Script" id=1]
+[ext_resource path="res://arial.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 2 )
+
+[node name="CsvTest" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="VBox" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Items" type="Label" parent="VBox"]
+margin_right = 1024.0
+margin_bottom = 35.0
+custom_fonts/font = SubResource( 1 )
+text = "Text"
+align = 1
+valign = 1
